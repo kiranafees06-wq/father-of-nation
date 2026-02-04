@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5FD;
+    line-height: 1.4;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+header .image {
+    max-width: 30%;
+}
+header .title {
+    max-width: 50%;
+    text-align: right;
+}
+header .image img {
+    width: 20rem;
+    border-radius: 20rem;
+}
+
+header .title h1 {
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+header .title h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: right;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+footer {
+    text-align: right;
+    margin: 2rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    header .image, header .title {
+        max-width: 100%;
+    }
+    header .title h2 {
+        text-align: center;
+    }
+    header .title h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    header .image img {
+        width: 300px;
+        margin: 2rem auto;
+    }
+
+    .hero, .about h3 {
+        width: 90%;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .about {
+        text-align: left;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+}
